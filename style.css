@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+article {
+  padding:0 1em;
+}
+
+section{
+  margin: 1em;
+  padding: 1em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+header p{
+  background-color: rgba(238, 238, 238, 0.45);
+  color: rgb(27, 26, 26);
+  border-radius: 21px;
+  padding: 13px;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+  color: #fff;
+  background-image: url('img/homeOfice.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 100%;
+}
+
+h1 {
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+h4 {
+  margin: 25px 0;
+}
+
+main {
+  max-width: 1140px;
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.course {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.course .title {
+  color: #509e98;
+  -ms-flex: 0 0 33.3%;/
+  flex: 0 0 33.3%;
+  max-width: 33%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.course .descrition {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%
+}
+
+.course .descrition p {
+  padding-left: 1em;
+}
+
+.skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.skills .column {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+ul {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul > li {
+ padding-left: 1.5em; 
+}
+ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: #509e98;
+
+}
+.school, .work {
+    font-weight: bold;
+  }
+.school span, .work span {
+  color: #A7B8BF;
+  text-decoration: underline;
+}
+
+footer {
+ padding: 1em;
+ background-color:#509e98;
+}
+
+footer p {
+  text-align: right;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+footer p, a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .descrition {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 608px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
